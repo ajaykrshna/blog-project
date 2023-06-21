@@ -63,13 +63,13 @@
     line-height: 130%;
 }
 
-.card--tags {
+.blog--tags {
     display: flex;
     gap: 5px;
     margin-top: 10px;
 }
 
-.card--tag {
+.blog--tag {
     background-color: #fff;
     font-size: 0.9rem;
     font-weight: 500;
