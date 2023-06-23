@@ -2,9 +2,9 @@ import React from "react";
 import dp from '../images/dp.png'
 import '../styles/about.css'
 
-function About() {
+function About({darkMode}) {
     return (
-        <div className="about">
+        <div className={darkMode ? "aboutdark" : "aboutlight"}>
             <h1>AJAY K</h1>
             <img src={dp} alt="profile"/>
             <h2>About me</h2>

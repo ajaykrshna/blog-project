@@ -7,12 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #090D1F;
-  overflow-x: hidden;
-  padding: 100px;
-  padding-bottom: 0;
-  padding-top: 60px;
-  min-height: 100vh;
+  /* background: #090D1F; */
 }
 
 code {
@@ -20,11 +15,24 @@ code {
     monospace;
 }
 
-.App {
+/* Dark Mode */
+
+.Appdark {
   min-height: 100vh;
+  background-color: #090D1F;
+/*   width: 100vw; */
+  padding: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: max-content;
+  transition: 0.2s;
 }
 
-.topcards{
+.content {
+  padding-top: 100px;
+}
+
+.topcards {
   display: flex;
   flex-direction: column;
 }
@@ -41,14 +49,13 @@ code {
   justify-content: space-between;
   max-width: 100vw;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 10px;
   padding-bottom: 30px;
   margin-top: 25px;
   border-bottom: 1px solid #fff;
 }
 
-
-.theblogtext {
+.theblogtext--dark {
   text-align: center;
   font-size: 15.5rem;
   border-top: 1px solid #fff;
@@ -56,8 +63,32 @@ code {
   color: #fff;
 }
 
-.recent h2 {
+.recent--dark h2 {
   color: #fff;
+  margin-top: 50px;
+  font-size: 1.4rem;
+}
+
+/* Light Mode */
+
+.Applight {
+  min-height: 100vh;
+/*   width: 100vw; */
+  padding: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: max-content;
+  transition: 0.2s;
+}
+
+.theblogtext--light {
+  text-align: center;
+  font-size: 15.5rem;
+  border-top: 1px solid #1A1A1A;
+  border-bottom: 1px solid #1A1A1A;
+}
+
+.recent--light h2 {
   margin-top: 50px;
   font-size: 1.4rem;
 }

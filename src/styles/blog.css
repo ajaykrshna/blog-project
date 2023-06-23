@@ -12,7 +12,7 @@ body {
 .blog {
     width: min-content;
     padding: 10px 50px;
-    margin: 0 auto;
+    margin: 0 250px;
 }
 
 .blog--date p {
@@ -64,19 +64,20 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .newsletter--heading {
     font-weight: 700;
     color: #6941C6;
 }
 
-.newsletter--headingstories {
+.newsletter--headingstories--dark {
     margin-top: 15px;
     color: #fff;
     font-size: 2rem;
     font-weight: 600;
 }
 
-.newsletter--desc {
+.newsletter--desc--dark {
     margin-top: 15px;
     padding: 0 50px;
     text-align: center;
@@ -91,7 +92,7 @@ body {
     gap: 10px;
 }
 
-.newsletter--email {
+.newsletter--email--dark {
     width: 280px;
     height: 35px;
     padding: 5px 15px;
@@ -113,7 +114,7 @@ body {
     text-align: center;
 }
 
-.newsletter--privacy {
+.newsletter--privacy--dark {
     margin-top: 8px;
     color: #C0C5D0;
     font-size: 0.77rem;
@@ -124,4 +125,39 @@ body {
     font-size: 0.8rem;
     margin-top: 5px;
     margin-bottom: -5px;
+}
+
+
+/*  Newletter Lightmode */
+
+.newsletter--headingstories--light {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.newsletter--desc--light {
+    margin-top: 15px;
+    padding: 0 50px;
+    text-align: center;
+    color: #667085;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.newsletter--privacy--light {
+    margin-top: 8px;
+    color: #667085;
+    font-size: 0.77rem;
+}
+
+.newsletter--email--light {
+    width: 280px;
+    height: 35px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: 1px solid #C0C5D0;
+    color: #667085;
+    outline: none;
+    font-size: 0.9rem;
 }

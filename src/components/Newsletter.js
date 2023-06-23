@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import '../styles/blog.css'
 
-function Newsletter() {
+function Newsletter({ darkMode }) {
     const [email, setEmail] = useState('')
     const [subscribed, setSubscribed] = useState(false)
 
     const handleEmail = (event) => {
         setEmail(event.target.value)
+        setSubscribed(false)
     }
 
     const handleClick = (event) => {
         event.preventDefault()
-        setSubscribed(true)
+        email && setSubscribed(true)
     }
 
     const successNewsletter = (
@@ -22,11 +23,11 @@ function Newsletter() {
     return (
         <div className="newsletter">
             <p className="newsletter--heading">Newsletter</p>
-            <h1 className="newsletter--headingstories">Stories and interviews</h1>
-            <p className="newsletter--desc">Subscribe to learn about new product features, the latest in technology, solutions, and updates.</p>
+            <h1 className={darkMode ? "newsletter--headingstories--dark" : "newsletter--headingstories--light"}>Stories and interviews</h1>
+            <p className={darkMode ? "newsletter--desc--dark" : "newsletter--desc--light"}>Subscribe to learn about new product features, the latest in technology, solutions, and updates.</p>
             <form className="newsletter--form">
                 <input
-                    className="newsletter--email"
+                    className={darkMode ? "newsletter--email--dark" : "newsletter--email--light"}
                     type="email"
                     placeholder="Enter your email"
                     name="email"
@@ -35,8 +36,8 @@ function Newsletter() {
                 />
                 <button className="newsletter--button" onClick={handleClick}>Subscribe</button>
             </form>
-            {subscribed && successNewsletter}
-            <p className="newsletter--privacy">We care about your data in our privacy policy</p>
+            {(subscribed) && successNewsletter}
+            <p className={darkMode ? "newsletter--privacy--dark" : "newsletter--privacy--light"}>We care about your data in our privacy policy</p>
         </div>
     )
 }

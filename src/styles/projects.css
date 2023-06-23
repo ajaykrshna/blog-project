@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.projects--heading {
+.projects--heading--dark {
     font-size: 15rem;
     text-align: center;
     border-bottom: 1px solid #fff;
@@ -17,27 +6,27 @@ body {
     color: #fff ;
 }
 
-.projects--subhead {
+.projects--subhead--dark {
     color: #fff;
     margin-top: 50px;
 }
 
-.project1 {
+.project1--dark {
   margin-top: 50px;
   width: 45%;
 }
 
-.project1 h1 {
+.project1--dark h1 {
   color: #fff;
   margin-top: 10px;
 }
 
-.project1 p {
+.project1--dark p {
   color: #C0C5D0;
   margin-top: 10px;
 }
 
-.project1 img {
+.project1--dark img {
   width: 100%;
 }
 
@@ -54,4 +43,38 @@ body {
   text-align: center;
   padding: 4px 15px;
   border-radius: 15px;
+}
+
+/* Light mode */
+
+.projects--heading--light {
+  font-size: 15rem;
+  text-align: center;
+  border-bottom: 1px solid #1A1A1A;
+  border-top: 1px solid #1A1A1A;
+  color: #000 ;
+}
+
+.projects--subhead--light {
+  color: #000;
+  margin-top: 50px;
+}
+
+.project1--light {
+margin-top: 50px;
+width: 45%;
+}
+
+.project1--light h1 {
+color: #000;
+margin-top: 10px;
+}
+
+.project1--light p {
+color: #667085;
+margin-top: 10px;
+}
+
+.project1--light img {
+width: 100%;
 }

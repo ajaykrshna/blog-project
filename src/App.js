@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from './pages/Home'
@@ -10,19 +10,27 @@ import Footer from "./components/Footer";
 import './index.css'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDarkMode(prev => !prev)
+  }
+
   return (
-    <div className="App">
+    <div className={darkMode ? "Appdark" : "Applight"}>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/blog' element={<Blog />} />
-          <Route exact path='/newsletter' element={<NewsletterPage />} />
-          <Route exact path='/projects' element={<Projects />} />
-          <Route exact path='/about' element={<About />} />
-        </Routes>
+        <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        <div className="content">
+          <Routes>
+            <Route exact path='/' element={<Home darkMode={darkMode} />} />
+            <Route exact path='/blog' element={<Blog darkMode={darkMode} />} />
+            <Route exact path='/newsletter' element={<NewsletterPage darkMode={darkMode} />} />
+            <Route exact path='/projects' element={<Projects darkMode={darkMode} />} />
+            <Route exact path='/about' element={<About darkMode={darkMode} />} />
+          </Routes>
+        </div>
       </Router>
-      <Footer />
+      <Footer darkMode={darkMode}/>
     </div>
   );
 }

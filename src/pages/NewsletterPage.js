@@ -1,13 +1,13 @@
 import React from "react";
 import Newsletter from '../components/Newsletter'
 import Cards from "../components/Cards";
+import '../index.css'
 
-
-function NewsletterPage() {
+function NewsletterPage({ darkMode }) {
     return (
         <div className="newsletterpage">
-            <Newsletter />
-            <div className="recent" style={{marginTop : '60px'}}>
+            <Newsletter darkMode={darkMode} />
+            <div className="recent" style={{ marginTop: '60px' }}>
                 <h2>All blog posts</h2>
             </div>
             <div className="main">

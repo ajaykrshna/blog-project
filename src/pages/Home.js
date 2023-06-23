@@ -6,38 +6,38 @@ import CardTopFull from "../components/CardTopFull";
 import PageNo from "../components/PageNo";
 import '../index.css'
 
-function Home() {
+function Home({ darkMode }) {
     return (
         <div className="Home">
             <div className="theblog">
-                <h1 className="theblogtext">THE BLOG</h1>
+                <h1 className={darkMode ? "theblogtext--dark" : "theblogtext--light"}>THE BLOG</h1>
             </div>
-            <div className="recent">
+            <div className={darkMode ? "recent--dark" : "recent--light"}>
                 <h2>Recent blog posts</h2>
             </div>
             <div className="topcards">
                 <div className="top">
-                    <CardTopVert />
+                    <CardTopVert darkMode={darkMode}/>
                     <div className="topside">
-                        <CardTopHori />
-                        <CardTopHori />
+                        <CardTopHori darkMode={darkMode}/>
+                        <CardTopHori darkMode={darkMode}/>
                     </div>
                 </div>
-                <CardTopFull />
+                <CardTopFull darkMode={darkMode}/>
             </div>
             <div className="recent">
                 <h2>All blog posts</h2>
             </div>
             <div className="main">
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
+                <Cards darkMode={darkMode}/>
+                <Cards darkMode={darkMode}/>
+                <Cards darkMode={darkMode}/>
+                <Cards darkMode={darkMode}/>
+                <Cards darkMode={darkMode}/>
+                <Cards darkMode={darkMode}/>
             </div>
             <div className="pagedisplay">
-                <PageNo />
+                <PageNo darkMode={darkMode}/>
             </div>
         </div>
     );

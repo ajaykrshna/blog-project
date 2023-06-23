@@ -2,13 +2,13 @@ import React from "react";
 import '../styles/projects.css'
 import proj1img from '../images/todo.png'
 
-function Projects() {
+function Projects({ darkMode }) {
     return (
         <div className="projects">
-            <h1 className="projects--heading">PROJECTS</h1>
-            <h3 className="projects--subhead">List project</h3>
-            <div className="project1">
-                <img src={proj1img} />
+            <h1 className={darkMode ? "projects--heading--dark" : "projects--heading--light"}>PROJECTS</h1>
+            <h3 className={darkMode ? "projects--subhead--dark" : "projects--subhead--light"}>List project</h3>
+            <div className={darkMode ? "project1--dark" : "project1--light"}>
+                <img src={proj1img} alt="todolist"/>
                 <h1>To do list app</h1>
                 <p>Just for Fun</p>
                 <div className="project--tags">

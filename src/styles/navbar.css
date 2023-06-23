@@ -8,14 +8,21 @@
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: 0.2s;
 }
 
-.navbar {
+.navbardark {
     color: white;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
     margin-right: 5px;
+    background: #090D1F;
+    width: 87%;
+    height: 100px;
+    align-items: center;
+    z-index: 999;
 }
 
 .navbar--div {
@@ -24,21 +31,117 @@
     gap: 50px;
 }
 
-.navbar--link--div {
+.navbar--link--div--dark {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.navbar--link--div a {
+.navbar--link--div--dark a {
     text-decoration: none;
     color: #fff;
 }
 
-.navbar--links.active {
+.navbar--links--dark.active {
     color: #fff;
     font-weight: 700;
     margin-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid white;
+}
+
+.nav-toggle--dark {
+    width: 24px;
+    height: 24px;
+    background-color: #090D1F;
+    position: absolute;
+    border-radius: 50%;
+    right: 38.5px;
+    top: 38px;
+    transition: 0.2s;
+}
+
+.nav-darktoggle--dark {
+    background-color: #fff;
+    border-radius: 35px;
+}
+
+#sundark {
+    color: #fff;
+    margin-top: 2px;
+    font-size: 1.1rem;
+    padding: 3px 8px;
+}
+
+#moondark {
+    color: #000;
+    margin-top: 2px;
+    font-size: 1.1rem;
+    padding: 3px 8px;
+}
+
+
+
+
+/* Light Mode */
+
+.navbarlight {
+    background: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-right: 5px;
+    width: 87%;
+    height: 100px;
+    align-items: center;
+    z-index: 999;
+}
+
+.navbar--link--div--light {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar--link--div--light a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar--links--light.active {
+    font-weight: 700;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.nav-toggle--light {
+    width: 23px;
+    height: 23px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    right: 6.5px;
+    top: 38.6px;
+    transition: 0.2s;
+}
+
+.nav-darktoggle--light {
+    background-color: #090D1F;
+    border-radius: 45px;
+}
+
+#sunlight {
+    color: #fff;
+    margin-top: 2px;
+    font-size: 1.2rem;
+    padding: 3px 8px;
+}
+
+#moonlight {
+    color: #000;
+    margin-top: 2px;
+    font-size: 1.1rem;
+    padding: 3px 8px;
 }

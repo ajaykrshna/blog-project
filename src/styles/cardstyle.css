@@ -17,7 +17,6 @@
 
 .card--img {
     height: 260px;
-    background-color: red;
 }
 
 .card--img--img {
@@ -42,7 +41,7 @@
     margin-right: 2px;
 }
 
-.card--head--text {
+.card--head--text--dark {
     font-size: 1.35rem;
     color: #fff;
 }
@@ -57,7 +56,7 @@
     margin-top: 6px;
 }
 
-.card--desc p {
+.card--desc--dark p {
     color: #C0C5D0;
     font-size: 0.95rem;
     line-height: 130%;
@@ -78,7 +77,17 @@
     border-radius: 15px;
 }
 
+/* Light mode */
 
+.card--head--text--light {
+    font-size: 1.35rem;
+}
+
+.card--desc--light p {
+    color: #667085;
+    font-size: 0.95rem;
+    line-height: 130%;
+}
 
 /* For card at top second section */
 
