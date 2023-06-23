@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import NewsletterPage from './pages/NewsletterPage';
+import About from './pages/About';
 import Footer from "./components/Footer";
 import './index.css'
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <NewsletterPage />
+      <About />
       <Footer />
     </div>
   );
