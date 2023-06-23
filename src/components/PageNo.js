@@ -13,7 +13,7 @@ export default function PageNo(){
             <div className="numbers">
                 <div className="number">1</div>
                 <div className="number">2</div>
-                <div className="number">3</div>
+                <div className="number">4</div>
             </div>
             <div className="next">
                 <p>Next</p>
