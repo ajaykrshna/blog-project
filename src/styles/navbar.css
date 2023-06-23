@@ -20,10 +20,25 @@
 
 .navbar--div {
     display: flex;
+    align-items: center;
     gap: 50px;
 }
 
 .navbar--link--div {
     display: flex;
+    align-items: center;
     gap: 50px;
+}
+
+.navbar--link--div a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar--links.active {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
 }
