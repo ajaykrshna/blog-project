@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/cardstyle.css'
 import arrowupright from '../icons/arrow-up-right.svg'
+import { Link } from "react-router-dom";
 
 function Cards({ darkMode }) {
     return (
@@ -13,7 +14,7 @@ function Cards({ darkMode }) {
             </div>
             <div className="card--head">
                 <h2 className={darkMode ? "card--head--text--dark" : "card--head--text--light"}>Bill Walsh leadership lessons</h2>
-                <img src={arrowupright} className="card--head--icon" alt="arrow up right" />
+                <Link to='/blog'><img src={arrowupright} className="card--head--icon" alt="arrow up right" /></Link>
             </div>
             <div className={darkMode ? "card--desc--dark" : "card--desc--light"}>
                 <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>

@@ -29,6 +29,7 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    cursor: pointer;
 }
 
 .navbar--link--div--dark {
@@ -40,6 +41,13 @@
 .navbar--link--div--dark a {
     text-decoration: none;
     color: #fff;
+}
+
+.navbar--link--div--dark a:hover {
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: #fff;
+    font-weight: 500;
 }
 
 .navbar--links--dark.active {
@@ -107,6 +115,12 @@
 .navbar--link--div--light a {
     text-decoration: none;
     color: black;
+}
+
+.navbar--link--div--light a:hover {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
 }
 
 .navbar--links--light.active {

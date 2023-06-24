@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/cardstyle.css'
 import arrowupright from '../icons/arrow-up-right.svg'
+import { Link } from "react-router-dom";
 
 function CardTopFull() {
     return (
@@ -14,7 +15,7 @@ function CardTopFull() {
                 </div>
                 <div className="card--head1">
                     <h2 className="card--head--text1">Bill Walsh leadership lessons</h2>
-                    <img src={arrowupright} className="card--head--icon4" alt="arrow up right" />
+                    <Link to='/blog'><img src={arrowupright} className="card--head--icon4" alt="arrow up right" /></Link>
                 </div>
                 <div className="card--desc1">
                     <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>

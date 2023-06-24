@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Navbar({ toggleDarkMode, darkMode }) {
     return (
         <nav className={darkMode ? "navbardark" : "navbarlight"}>
-            <h3 className="navbar--name">Your Name</h3>
+            <h3 className="navbar--name">Ajay K</h3>
             <div className="navbar--div">
                 <div className={darkMode ? "navbar--link--div--dark" : "navbar--link--div--light"}>
                     <NavLink to='/blog' className={darkMode ? "navbar--links--dark" : "navbar--links--light"} >Blog</NavLink>

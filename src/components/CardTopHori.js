@@ -1,6 +1,8 @@
 import React from "react";
 import '../styles/cardstyle.css'
 import arrowupright from '../icons/arrow-up-right.svg'
+import { Link } from "react-router-dom";
+
 
 function CardTopHori() {
     return (
@@ -14,7 +16,7 @@ function CardTopHori() {
                 </div>
                 <div className="card--head3">
                     <h2 className="card--head--text3">Bill Walsh leadership lessons</h2>
-                    <img src={arrowupright} className="card--head--icon3" alt="arrow up right" />
+                    <Link to='/blog'><img src={arrowupright} className="card--head--icon3" alt="arrow up right" /></Link>
                 </div>
                 <div className="card--desc3">
                     <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
