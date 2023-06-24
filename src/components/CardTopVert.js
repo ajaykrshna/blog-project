@@ -3,7 +3,7 @@ import '../styles/cardstyle.css'
 import arrowupright from '../icons/arrow-up-right.svg'
 import { Link } from "react-router-dom";
 
-function CardTopVert() {
+function CardTopVert({ darkMode }) {
     return (
         <div className="card4">
             <div className="card--img4">
@@ -14,16 +14,16 @@ function CardTopVert() {
                     <p>Sunday , 1 Jan 2023</p>
                 </div>
                 <div className="card--head4">
-                    <h2 className="card--head--text4">Bill Walsh leadership lessons</h2>
+                    <h2 className={darkMode ? "card--head--text4--dark" : "card--head--text4--light"}>Bill Walsh leadership lessons</h2>
                     <Link to='/blog'><img src={arrowupright} className="card--head--icon4" alt="arrow up right" /></Link>
                 </div>
                 <div className="card--desc4">
                     <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
                 </div>
                 <div className="card--tags--vert">
-                    <div className="card--tag">Leadership</div>
-                    <div className="card--tag">Management</div>
-                    <div className="card--tag">Presentation</div>
+                    <div className="card--tag--leadership">Leadership</div>
+                    <div className="card--tag--management">Management</div>
+                    <div className="card--tag--presentation">Presentation</div>
                 </div>
             </div>
         </div>

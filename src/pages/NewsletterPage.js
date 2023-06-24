@@ -11,12 +11,12 @@ function NewsletterPage({ darkMode }) {
                 <h2>All blog posts</h2>
             </div>
             <div className="main">
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
-                <Cards />
+                <Cards darkMode={darkMode} />
+                <Cards darkMode={darkMode} />
+                <Cards darkMode={darkMode} />
+                <Cards darkMode={darkMode} />
+                <Cards darkMode={darkMode} />
+                <Cards darkMode={darkMode} />
             </div>
         </div>
     )

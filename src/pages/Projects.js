@@ -8,9 +8,9 @@ function Projects({ darkMode }) {
             <h1 className={darkMode ? "projects--heading--dark" : "projects--heading--light"}>PROJECTS</h1>
             <h3 className={darkMode ? "projects--subhead--dark" : "projects--subhead--light"}>List project</h3>
             <div className={darkMode ? "project1--dark" : "project1--light"}>
-                <img src={proj1img} alt="todolist"/>
-                <h1>To do list app</h1>
-                <p>Just for Fun</p>
+                <a href="https://ajaykrshna.github.io/React-app/"><img src={proj1img} alt="todolist" /></a>
+                <h1><a href="https://ajaykrshna.github.io/React-app/">To do list app</a></h1>
+                <p>Hello World! Project</p>
                 <div className="project--tags">
                     <div className="project--tag">Leadership</div>
                     <div className="project--tag">Management</div>

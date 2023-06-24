@@ -1,5 +1,5 @@
 import React from "react";
-import dp from '../images/dp.png'
+import dp from '../images/dp.jpg'
 import '../styles/about.css'
 
 function About({darkMode}) {

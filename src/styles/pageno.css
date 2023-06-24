@@ -23,6 +23,16 @@
     align-items: center;
 }
 
+.prevlink--dark {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.prevlink--dark:hover {
+    font-size: 1.02rem;
+}
+
 .next {
     display: flex;
     gap: 10px;
@@ -34,8 +44,15 @@
     gap: 30px;
 }
 
-.nexticon, .previcon {
+.nexticon--dark,
+.previcon--dark {
+    cursor: pointer;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(25deg) brightness(113%) contrast(113%);
+}
+
+.nexticon--dark:hover,
+.previcon--dark:hover {
+    scale: 1.1;
 }
 
 .number {
@@ -76,4 +93,29 @@
 .footer--light a {
     color: black;
     text-decoration: none;
+}
+
+/* Pageno lightmode */
+
+.prevlink--light {
+    text-decoration: none;
+    color: #667085;
+}
+
+
+.prevlink--light:hover {
+    color: #000;
+    font-size: 1.04rem;
+}
+
+.nexticon--light,
+.previcon--light {
+    cursor: pointer;
+    filter: invert(44%) sepia(17%) saturate(457%) hue-rotate(182deg) brightness(94%) contrast(93%);
+}
+
+.nexticon--light:hover,
+.previcon--light:hover {
+    scale: 1.1;
+    filter: invert(0%) sepia(0%) saturate(18%) hue-rotate(293deg) brightness(95%) contrast(105%);
 }

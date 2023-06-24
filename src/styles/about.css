@@ -12,7 +12,9 @@
 
 .aboutdark img {
     margin-top: 50px;
-    width: 100%;
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 
 .aboutdark h2 {
@@ -24,14 +26,14 @@
 .aboutdark p {
     color: #C0C5D0;
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .aboutdark ul {
     color: #C0C5D0;
     margin-top: 10px;
     margin-left: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 

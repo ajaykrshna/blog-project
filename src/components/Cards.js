@@ -14,15 +14,15 @@ function Cards({ darkMode }) {
             </div>
             <div className="card--head">
                 <h2 className={darkMode ? "card--head--text--dark" : "card--head--text--light"}>Bill Walsh leadership lessons</h2>
-                <Link to='/blog'><img src={arrowupright} className="card--head--icon" alt="arrow up right" /></Link>
+                <Link to='/blog'><img src={arrowupright} className={darkMode ?"card--head--icon--dark" : "card--head--icon--light"} alt="arrow up right" /></Link>
             </div>
             <div className={darkMode ? "card--desc--dark" : "card--desc--light"}>
                 <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
             </div>
             <div className="card--tags">
-                <div className="card--tag">Leadership</div>
-                <div className="card--tag">Management</div>
-                <div className="card--tag">Presentation</div>
+                <div className="card--tag--leadership">Leadership</div>
+                <div className="card--tag--management">Management</div>
+                <div className="card--tag--presentation">Presentation</div>
             </div>
         </div>
     )
