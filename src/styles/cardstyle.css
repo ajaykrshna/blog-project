@@ -98,7 +98,7 @@
     border-radius: 15px;
 }
 
-.card--tag--presentation{
+.card--tag--presentation {
     color: #C4320A;
     background-color: #FFF6ED;
     font-size: 0.9rem;
@@ -107,6 +107,7 @@
     padding: 4px 15px;
     border-radius: 15px;
 }
+
 /* Light mode */
 
 .card--head--text--light {
@@ -156,29 +157,56 @@
     margin-right: 2px;
 }
 
-.card--head--text3 {
-    font-size: 1.1rem;
+.card--head--text3--light {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+
+.card--head--text3--dark {
+    font-size: 1.3rem;
     color: #fff;
 }
 
-.card--head--icon3 {
+.card--head--icon3--light {
+    width: 35px;
+}
+
+.card--head--icon3--dark {
     width: 35px;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(25deg) brightness(113%) contrast(113%);
 }
 
-.card--head--icon3:hover {
+.card--head--icon3--light:hover {
+    width: 35px;
+    scale: 1.08;
+}
+
+.card--head--icon3--dark:hover {
     width: 35px;
     scale: 1.08;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(25deg) brightness(113%) contrast(113%);
 }
 
-.card--desc3 {
+.card--desc3--dark {
     margin-right: 35px;
     margin-top: 10px;
 }
 
-.card--desc3 p {
+.card--desc3--light {
+    margin-right: 35px;
+    margin-top: 10px;
+    color: #667085;
+}
+
+.card--desc3--dark p {
     color: #C0C5D0;
+    font-size: 0.85rem;
+    line-height: 130%;
+}
+
+.card--desc3--light p {
+    color: #667085;
     font-size: 0.85rem;
     line-height: 130%;
 }
@@ -215,29 +243,55 @@
     margin-right: 2px;
 }
 
-.card--head--text4 {
-    font-size: 1.35rem;
+.card--head--text4--light {
+    font-size: 1.5rem;
+}
+
+.card--head--text4--dark {
+    font-size: 1.5rem;
     color: #fff;
 }
 
-.card--head--icon4 {
+.card--head--icon4--dark {
     width: 35px;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(25deg) brightness(113%) contrast(113%);
 }
 
-.card--head--icon4:hover {
+
+.card--head--icon4--light {
+    width: 35px;
+}
+
+.card--head--icon4--light:hover {
+    width: 35px;
+    scale: 1.08;
+}
+
+.card--head--icon4--dark:hover {
     width: 35px;
     scale: 1.08;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(25deg) brightness(113%) contrast(113%);
 }
 
-.card--desc4 {
+.card--desc4--light {
+    margin-right: 35px;
+    margin-top: 8px;
+    color: #667085;
+}
+
+.card--desc4--dark {
     margin-right: 35px;
     margin-top: 8px;
 }
 
-.card--desc4 p {
+.card--desc4--dark p {
     color: #C0C5D0;
+    font-size: 0.95rem;
+    line-height: 130%;
+}
+
+.card--desc4--light p {
+    color: #667085;
     font-size: 0.95rem;
     line-height: 130%;
 }
@@ -252,7 +306,7 @@
 
 .card1 {
     width: 100%;
-    margin: 0 0 20px 20px;
+    margin: 15px 0 20px 0;
     display: flex;
 }
 
@@ -270,23 +324,39 @@
     margin-right: 2px;
 }
 
-.card--head--text1 {
-    font-size: 1.45rem;
-    color: #fff;
+.card--head--text1--light {
+    font-size: 1.5rem;
 }
 
-.card--desc1 {
+.card--head--text1--dark {
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+.card--desc1--light {
     margin-right: 35px;
     margin-top: 8px;
 }
 
-.card--desc1 p {
+.card--desc1--dark {
+    margin-right: 35px;
+    margin-top: 8px;
+}
+
+.card--desc1--dark p {
     color: #C0C5D0;
     font-size: 1rem;
     line-height: 130%;
     margin-bottom: 10px;
 }
 
+.card--desc1--light p {
+    color: #667085;
+    font-size: 1rem;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
 
 /* For tags in blog */
 

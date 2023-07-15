@@ -9,6 +9,7 @@
 .projects--subhead--dark {
   color: #fff;
   margin-top: 50px;
+  font-size: 1.8rem;
 }
 
 .project1--dark {
@@ -73,6 +74,7 @@
 .projects--subhead--light {
   color: #000;
   margin-top: 50px;
+  font-size: 1.8rem;
 }
 
 .project1--light {

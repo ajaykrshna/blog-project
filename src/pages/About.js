@@ -5,8 +5,8 @@ import '../styles/about.css'
 function About({darkMode}) {
     return (
         <div className={darkMode ? "aboutdark" : "aboutlight"}>
-            <h1>AJAY K</h1>
-            <img src={dp} alt="profile"/>
+            <h1>LOREM IPSUM</h1>
+            {/* <img src={dp} alt="profile"/> */}
             <h2>About me</h2>
             <p>As a passionate and experienced UI designer, I am dedicated to creating intuitive and engaging user experiences that meet the needs of my clients and their users. I have a strong understanding of design principles and a proficiency in design tools, and I am comfortable working with cross-functional teams to bring projects to fruition. I am confident in my ability to create designs that are both visually appealing and functional, and I am always looking for new challenges and opportunities to grow as a designer.</p>
             <h2>Skills</h2>

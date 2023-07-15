@@ -16,9 +16,9 @@ function CardTopHori({ darkMode }) {
                 </div>
                 <div className="card--head3">
                     <h2 className={darkMode ? "card--head--text3--dark" : "card--head--text3--light"}>Bill Walsh leadership lessons</h2>
-                    <Link to='/blog'><img src={arrowupright} className="card--head--icon3" alt="arrow up right" /></Link>
+                    <Link to='/blog'><img src={arrowupright} className={darkMode ? "card--head--icon3--dark" : "card--head--icon3--light"} alt="arrow up right" /></Link>
                 </div>
-                <div className="card--desc3">
+                <div className={darkMode ? "card--desc3--dark" : "card--desc3--light"}>
                     <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</p>
                 </div>
                 <div className="card--tags">

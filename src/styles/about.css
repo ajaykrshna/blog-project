@@ -53,7 +53,9 @@
 
 .aboutlight img {
     margin-top: 50px;
-    width: 100%;
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 
 .aboutlight h2 {
@@ -65,12 +67,12 @@
 .aboutlight p {
     color: #667085;
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .aboutlight ul {
     color: #667085;
     margin-top: 10px;
     margin-left: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }

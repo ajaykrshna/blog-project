@@ -11,10 +11,12 @@
 }
 
 .pageno {
-    margin-top: 40px;
+    padding-top: 40px;
     color: white;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #fff;
+
 }
 
 .prev {

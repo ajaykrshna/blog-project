@@ -8,6 +8,7 @@ function Navbar({ toggleDarkMode, darkMode }) {
             <h3 className="navbar--name">Ajay K</h3>
             <div className="navbar--div">
                 <div className={darkMode ? "navbar--link--div--dark" : "navbar--link--div--light"}>
+                    <NavLink to='/' className={darkMode ? "navbar--links--dark" : "navbar--links--light"} >Home</NavLink>
                     <NavLink to='/blog' className={darkMode ? "navbar--links--dark" : "navbar--links--light"} >Blog</NavLink>
                     <NavLink to='/projects' className={darkMode ? "navbar--links--dark" : "navbar--links--light"} >Projects</NavLink>
                     <NavLink to='/about' className={darkMode ? "navbar--links--dark" : "navbar--links--light"} >About</NavLink>
