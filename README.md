@@ -1,8 +1,9 @@
 # Blog Website
 
-## Design Credits
+## Website Link
 
-[The Blog - A Web Personal Blog By Faqih Sopyan](https://www.figma.com/community/file/1235152009438565697)
+[https://ajaykrshna.github.io/blog-project/](https://ajaykrshna.github.io/blog-project/)
+
 
 ## How to run
 
@@ -23,6 +24,11 @@ or
 ```shell
 yarn start 
 ```
+
+## Design Credits
+
+[The Blog - A Web Personal Blog By Faqih Sopyan](https://www.figma.com/community/file/1235152009438565697)
+
 
 ## Desciption 
 
