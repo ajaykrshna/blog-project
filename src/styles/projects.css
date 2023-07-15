@@ -87,6 +87,17 @@
   margin-top: 10px;
 }
 
+.project1--light a {
+  text-decoration: none;
+  color: #000;
+}
+
+.project1--light a:hover {
+  text-decoration: none;
+  color: #000;
+  font-size: 2.03rem;
+}
+
 .project1--light p {
   color: #667085;
   margin-top: 10px;
@@ -94,4 +105,8 @@
 
 .project1--light img {
   width: 100%;
+}
+
+.project1--light img:hover {
+  scale: 1.02;
 }

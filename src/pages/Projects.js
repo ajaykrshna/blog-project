@@ -11,10 +11,10 @@ function Projects({ darkMode }) {
                 <a href="https://ajaykrshna.github.io/React-app/"><img src={proj1img} alt="todolist" /></a>
                 <h1><a href="https://ajaykrshna.github.io/React-app/">To do list app</a></h1>
                 <p>Hello World! Project</p>
-                <div className="project--tags">
-                    <div className="project--tag">Leadership</div>
-                    <div className="project--tag">Management</div>
-                    <div className="project--tag">Presentation</div>
+                <div className="card--tags--vert">
+                    
+                    <div className="card--tag--management">Management</div>
+                    <div className="card--tag--presentation">Presentation</div>
                 </div>
             </div>
         </div>
